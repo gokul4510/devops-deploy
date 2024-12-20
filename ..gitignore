@@ -1,0 +1,95 @@
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies
+node_modules/
+/node_modules
+
+# Distribution
+dist/
+build/
+out/
+
+# IDEs and Editors
+.DS_Store
+*.swp
+*.swo
+.vscode/
+.idea/
+.project
+.classpath
+*.ipr
+*.iws
+*.userprefs
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Environment files
+.env
+
+# AWS Credentials (VERY IMPORTANT!)
+.aws/
+aws_key.pem
+
+# Python Specific (If applicable)
+*.pyc
+__pycache__/
+.pytest_cache/
+.coverage
+*.egg-info
+
+# Temporary files
+*~
+*.bak
+*.tmp
+*.temp
+
+# Docker related if they are not needed in the repo
+# docker-compose.override.yml
+# .dockerenv
+# .DS_Store: macOS Finder metadata
+# Thumbs.db: Windows thumbnail cache files
+
+# Local configuration files that should not be committed
+config/local.json
+config/development.json
+config/test.json
+*.local
+
+# Certificate and key files
+*.cer
+*.crt
+*.key
+*.pfx
+
+# Ignore history of large files
+.git-history/
+
+# Ignore build artifacts from common build tools
+target/
+bin/
+obj/
+*.o
+*.a
+*.exe
+*.dll
+*.lib
+*.so
+*.dylib
+*.ncb
+*.sdf
+*.suo
+*.sln
+*.pdb
+
+# Ignore coverage reports
+coverage/
+
+# Ignore documentation builds
+docs/_build/
