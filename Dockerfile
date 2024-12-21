@@ -1,7 +1,13 @@
-FROM nginx:alpine
+# Use the official Nginx base image
+FROM nginx:latest
 
-COPY build /usr/share/nginx/html
 
+# Copy the build files from your repository to the Nginx HTML directory
+COPY build/ /usr/share/nginx/html
+
+# Expose port 80
 EXPOSE 80
 
+# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
+
