@@ -1,8 +1,12 @@
+version: '3.8'
+
 services:
-  nginx-app:
-    build: .
+  react-app:
+    image: myapp  # Replace react-app with myapp
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - "7070:80"
-    volumes:
-      - ./build:/usr/share/nginx/html
+      - "80:80"
+    restart: always
 
