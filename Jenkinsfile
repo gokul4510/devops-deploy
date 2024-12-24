@@ -4,7 +4,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t myapp:latest .'
-                sh 'docker login -u username -p dckr_pat_5_TmcNWx1E7ELge8wqn2OexO75M'
+                sh 'docker login -u gokul4510 -p dckr_pat_5_TmcNWx1E7ELge8wqn2OexO75M'
             }
         }
         stage('Tag and Push Docker Image') {
