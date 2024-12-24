@@ -9,13 +9,13 @@ pipeline {
         }
         stage('Tag and Push Docker Image') {
             steps {
-                sh 'docker tag myapp:latest gokul4510/dev:myapp:latest'
-                sh 'docker push gokul4510/dev:myapp:latest'
+                sh 'docker tag myapp:latest gokul4510/dev'
+                sh 'docker push gokul4510/dev'
             }
         }
         stage('Run Application') {
             steps {
-                sh 'docker run -d -p 80:80 gokul4510/dev:myapp:latest'
+                sh 'docker run -d -p 80:80 gokul4510/dev'
             }
         }
     }
